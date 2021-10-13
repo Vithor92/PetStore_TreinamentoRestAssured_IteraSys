@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
 
 public class Pet {
     String uri = "https://petstore.swagger.io/v2/pet";
@@ -28,6 +29,10 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
+                .body("name", is("Snoopy"))
+                .body("status", is("available"))
+                .body("id", is(19921110))
+                .body("category.name", is("dog"))
         ;
     }
 
