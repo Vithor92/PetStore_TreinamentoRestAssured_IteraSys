@@ -9,6 +9,6 @@ REST-Assured
 Utilização do GET, POST de uma API aberta com a finalidade de aprender a utilizar o REST-Assured e seus comandos básicos. <br />
 Projeto realizado na Semana de API da Iterasys.
 
-URL:[Flex Grid](petstore.swagger.io/v2)
+URL: https://petstore.swagger.io/
 
 
